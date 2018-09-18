@@ -22,63 +22,19 @@ namespace hafasTest
     {
         private const string responseContentXml = @"<?xml version=""1.0"" encoding=""UTF-8""?>
 <DepartureBoard xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""http://xmlopen.rejseplanen.dk/xml/rest/hafasRestDepartureBoard.xsd"">
-    <Departure name=""Bus 332"" type=""BUS"" stop=""Solhøjpark (Solhøjgårdsvej)"" time=""21:42"" date=""26.05.18"" messages=""0"" finalStop=""Farum St."" direction=""Farum øst - Farum St. via Farum Midtpunkt"">
-        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=385635%2F146749%2F484208%2F113561%2F86%3Fdate%3D26.05.18"" />
+    <Departure name=""Bus 37"" type=""BUS"" stop=""Amagerværket"" time=""23:10"" date=""18.09.18"" messages=""0"" finalStop=""Nordhavn St. (Østbanegade)"" direction=""Nordhavn St. via Kløvermarksvej"">
+        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=465207%2F174138%2F101828%2F104159%2F86%3Fdate%3D18.09.18"" />
     </Departure>
-    <Departure name=""Bus 332"" type=""BUS"" stop=""Solhøjpark (Solhøjgårdsvej)"" time=""22:42"" date=""26.05.18"" messages=""0"" finalStop=""Farum St."" direction=""Farum øst - Farum St. via Farum Midtpunkt"">
-        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=743568%2F266060%2F587158%2F45726%2F86%3Fdate%3D26.05.18"" />
-    </Departure>
-</DepartureBoard>";
-        private const string responseContentXml2 = @"<?xml version=""1.0"" encoding=""UTF-8""?>
-<DepartureBoard xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""http://xmlopen.rejseplanen.dk/xml/rest/hafasRestDepartureBoard.xsd"">
-    <Departure name=""Bus 332"" type=""BUS"" stop=""Solhøjpark (Solhøjgårdsvej)"" time=""21:42"" date=""26.05.18"" messages=""0"" finalStop=""Farum St."" direction=""Farum øst - Farum St. via Farum Midtpunkt"">
-        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=385635%2F146749%2F484208%2F113561%2F86%3Fdate%3D26.05.18"" />
-    </Departure>
-    <Departure name=""Bus 332"" type=""BUS"" stop=""Solhøjpark (Solhøjgårdsvej)"" time=""22:42"" date=""26.05.18"" messages=""0"" finalStop=""Farum St."" direction=""Farum øst - Farum St. via Farum Midtpunkt"">
-        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=743568%2F266060%2F587158%2F45726%2F86%3Fdate%3D26.05.18"" />
+    <Departure name=""Bus 37"" type=""BUS"" stop=""Amagerværket"" time=""05:50"" date=""19.09.18"" messages=""0"" finalStop=""Nordhavn St. (Østbanegade)"" direction=""Nordhavn St. via Kløvermarksvej"">
+        <JourneyDetailRef ref=""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=356148%2F137775%2F27766%2F104833%2F86%3Fdate%3D19.09.18"" />
     </Departure>
 </DepartureBoard>";
+
         private HafasProvider provider;
 
         [TestInitialize]
         public void Initialize()
         {
-            var responseContentJson = 
-@"{
-    ""DepartureBoard"": {
-        ""noNamespaceSchemaLocation"": ""http://xmlopen.rejseplanen.dk/xml/rest/hafasRestDepartureBoard.xsd"",
-        ""Departure"": [
-            {
-                ""name"": ""Bus 334"",
-                ""type"": ""BUS"",
-                ""stop"": ""Stavnsholtstien (Paltholmvej)"",
-                ""time"": ""00:14"",
-                ""date"": ""20.05.18"",
-                ""messages"": ""1"",
-                ""finalStop"": ""Farum St."",
-                ""direction"": ""Farum St."",
-                ""JourneyDetailRef"": {
-                    ""ref"": ""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=640437%2F225164%2F944850%2F258946%2F86%3Fdate%3D20.05.18%26format%3Djson""
-                }
-            },
-            {
-                ""name"": ""Bus 334"",
-                ""type"": ""BUS"",
-                ""stop"": ""Stavnsholtstien (Paltholmvej)"",
-                ""time"": ""07:47"",
-                ""date"": ""20.05.18"",
-                ""messages"": ""1"",
-                ""finalStop"": ""Holte St."",
-                ""direction"": ""Holte St."",
-                ""JourneyDetailRef"": {
-                    ""ref"": ""http://xmlopen.rejseplanen.dk/bin/rest.exe/journeyDetail?ref=638166%2F224440%2F674052%2F124304%2F86%3Fdate%3D20.05.18%26format%3Djson""
-                }
-            }
-        ]
-    }
-}
-";
-
             var msgHandlerMock = new Mock<HttpMessageHandler>();
             msgHandlerMock.Protected()
                 .Setup<Task<HttpResponseMessage>>(

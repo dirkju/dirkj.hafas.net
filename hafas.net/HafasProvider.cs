@@ -55,7 +55,6 @@ namespace hafas.net
         {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
-            //client.DefaultRequestHeaders.Add("ContentType","application/x-www-form-urlencoded");
 
             XmlSerializer serializer = new XmlSerializer(typeof(DepartureBoard));
             var responseStream = client.GetStreamAsync(relativeUrl).Result;
