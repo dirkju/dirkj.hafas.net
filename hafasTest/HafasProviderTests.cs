@@ -96,7 +96,7 @@ namespace hafasTest
         [TestMethod]
         public void GetDepartureBoard()
         {
-            var dpb = this.provider.GetDepartureBoard("9472",  DateTime.Parse("2018-05-26 07:02"));
+            var dpb = this.provider.GetDepartureBoard("45933",  DateTime.Parse("2018-05-26 07:02"));
             Assert.IsNotNull(dpb);
         }
 
@@ -106,7 +106,7 @@ namespace hafasTest
         {
             var dsb = new HafasProvider(HafasEndpoints.DSB);
 
-            var stationId = "9472";
+            var stationId = "45933";
             var dpb = dsb.GetDepartureBoard(stationId, DateTime.Now);
             Debug.Print(
                 "{0} Departures; Next: {1} {2}",
