@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace hafas.net
+namespace dirkj.hafas.net
 {
     using System.Xml.Serialization;
 

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace hafas.net
+namespace dirkj.hafas.net
 {
     /// <summary>
     /// The location list contains stops/stations as a result of a stops nearby request.

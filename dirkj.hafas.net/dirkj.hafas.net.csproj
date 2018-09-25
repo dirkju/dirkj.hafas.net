@@ -9,7 +9,7 @@
     <Version>1.0.0.0</Version>
     <Authors>Dirk Junghanns</Authors>
     <Company />
-    <Description>Hafas.Net provides a .net wrapper to several Hafas-based travel information portals.</Description>
+    <Description>dirkj.hafas.net provides a .net wrapper to several Hafas-based travel information portals.</Description>
     <Copyright>Dirk Junghanns</Copyright>
     <PackageTags>TravelPlan,Hafas,DSB,Rejseplan</PackageTags>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>

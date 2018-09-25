@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace hafas.net
+namespace dirkj.hafas.net
 {
     /// <summary>
     /// StopLocation specifies  a stop/station in a result of a location request. It contains an output name and an id.

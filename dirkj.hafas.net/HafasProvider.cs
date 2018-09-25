@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 
-namespace hafas.net
+namespace dirkj.hafas.net
 {
     public class HafasProvider
     {

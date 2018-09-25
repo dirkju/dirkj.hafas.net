@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace hafas.net
+namespace dirkj.hafas.net
 {
     [DataContract(Name = "root")]
     public class Root

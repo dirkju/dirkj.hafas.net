@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hafas.net", "hafas.net\hafas.net.csproj", "{9F055E1F-0A2B-44E9-9A6F-BFD2C6A20301}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dirkj.hafas.net", "dirkj.hafas.net\dirkj.hafas.net.csproj", "{9F055E1F-0A2B-44E9-9A6F-BFD2C6A20301}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hafasTest", "hafasTest\hafasTest.csproj", "{72228316-9E33-4F45-BC0D-BE804891E26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dirkj.hafas.test", "dirkj.hafas.test\dirkj.hafas.test.csproj", "{72228316-9E33-4F45-BC0D-BE804891E26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
