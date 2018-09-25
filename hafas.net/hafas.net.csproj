@@ -12,6 +12,7 @@
     <Description>Hafas.Net provides a .net wrapper to several Hafas-based travel information portals.</Description>
     <Copyright>Dirk Junghanns</Copyright>
     <PackageTags>TravelPlan,Hafas,DSB,Rejseplan</PackageTags>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
