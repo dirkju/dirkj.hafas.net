@@ -13,6 +13,8 @@
     <Copyright>Dirk Junghanns</Copyright>
     <PackageTags>TravelPlan,Hafas,DSB,Rejseplan</PackageTags>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/dirkju/dirkj.hafas.net</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
